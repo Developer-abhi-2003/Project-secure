@@ -5,6 +5,10 @@
 <title>Be My Valentine 💖</title>
 
 <style>
+    <audio id="bgMusic" loop>
+    <source src="song.mp3" type="audio/mpeg">
+</audio>
+
     body {
         height: 100vh;
         display: flex;
@@ -69,6 +73,9 @@
     });
 
     yesBtn.addEventListener("click", () => {
+            const music = document.getElementById("bgMusic");
+    music.play();
+
     
         document.body.innerHTML = `
                     <h1 style="font-size:32px; color:#ff4d6d;">
@@ -92,6 +99,7 @@
 
 </body>
 </html>
+
 
 
 
