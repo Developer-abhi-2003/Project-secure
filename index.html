@@ -74,7 +74,10 @@
 
     yesBtn.addEventListener("click", () => {
             const music = document.getElementById("bgMusic");
-    music.play();
+if (music) {
+    music.play().catch(() => {});
+}
+
 
     
         document.body.innerHTML = `
@@ -99,6 +102,7 @@
 
 </body>
 </html>
+
 
 
 
